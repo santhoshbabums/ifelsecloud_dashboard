@@ -1,0 +1,57 @@
+.card_container {
+    display: flex;
+    justify-content: space-between;
+
+    .card {
+        width: 350px;
+        background-color: rgb(247 247 254);
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        padding: 30px 40px;
+        margin: 0px 10px;
+        text-align: justify;
+        display: flex;
+        justify-content: space-between;
+
+        .value{
+            margin-top: 20px;
+        }
+
+        .percentage {
+            font-size: 50px;
+            color: #6262ed;
+        }
+
+        i {
+            font-size: 50px;
+            padding: 10px;
+            color: #cecaca;
+        }
+
+        .header {
+            font-size: 18px;
+        }
+    
+        .sub_header {
+            font-size: 8px;
+        }
+        
+    }
+
+    .card:hover {
+        background-color: #6262ed;
+        color: rgb(247 247 254);
+    }
+
+    .card:hover .percentage {
+        font-size: 50px;
+        color: rgb(247 247 254);
+    }
+
+    .card:hover i {
+        color: rgb(247 247 254);
+    }
+
+   
+}

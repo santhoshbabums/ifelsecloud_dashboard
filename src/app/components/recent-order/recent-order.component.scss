@@ -1,0 +1,21 @@
+.recent_order {
+    height: 450px;
+    overflow: hidden;
+    background: #ffffff;
+    border-radius: 7px;
+    padding: 25px;
+}
+
+
+.data {
+    overflow-y: scroll;
+    height: 400px;
+    font-family: 'Poppins-Medium', sans-serif !important;
+}
+
+.status_button{
+    border: none;
+    height: 20px;
+    color: white;
+    border-radius: 4px;
+}
