@@ -14,8 +14,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatTableModule } from '@angular/material/table';
 import { MatIconModule } from '@angular/material/icon';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
-import { DashboardComponent } from './components/dashboard/dashboard.component';
-
 
 @NgModule({
   declarations: [
@@ -25,7 +23,6 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
     TopdatacardComponent,
     LeftNavigationComponent,
     TopNavigationComponent,
-    DashboardComponent
   ],
   imports: [
     BrowserModule,
@@ -35,12 +32,7 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
     MatIconModule,
     MatProgressBarModule,
     NgxEchartsModule.forRoot({
-      /**
-       * This will import all modules from echarts.
-       * If you only need custom modules,
-       * please refer to [Custom Build] section.
-       */
-      echarts: () => import('echarts'), // or import('./path-to-my-custom-echarts')
+      echarts: () => import('echarts'), 
     }),
      BrowserAnimationsModule,
   ],
