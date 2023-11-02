@@ -1,98 +1,91 @@
-.home-container{
+.home-container {
     display: flex;
     flex-direction: column;
-    height: 100vh; 
-    overflow: hidden; 
-}
-.top-container{
-    position: sticky;
-    top: 0; 
-    z-index: 1; 
-}
-
-.body-container{
-    background-color: #e4f3fa;
-    flex: 1; 
-    overflow-y: auto; 
-    display: flex;
     height: 100vh;
-}
+    overflow: hidden;
 
-.left_navigation{
-   float: left;
-}
-    
-.card_container {
-    float: left;
-    width: 90%;
-    padding: 20px;
-    margin: 0 auto;
-
-    .card_section{
-        margin-bottom: 25px;
+    .top-container {
+        position: sticky;
+        top: 0;
+        z-index: 1;
     }
 
-    .user_details_container{
+    .body-container {
+        background-color: #e4f3fa;
+        flex: 1;
+        overflow-y: auto;
         display: flex;
-        justify-content: space-between;
-        margin-bottom: 25px;
-        width: 100%;
-    
-        .user_detail1 {
-           width: 55%;
+        height: 100vh;
+
+        .left_navigation_container {
+            float: left;
+            background: white;
+            position: sticky;
+            top: 0;
+            z-index: 1;
+            width: 75px;
         }
-        .user_detail2 {
-           width: 42%;
+
+        .card_container {
+            float: left;
+            width: 90%;
+            padding: 20px;
+            margin: 0 auto;
+            overflow: auto;
+
+            .card_section {
+                margin-bottom: 25px;
+            }
+
+            .user_details_container {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 25px;
+                width: 100%;
+
+                .recent_order {
+                    width: 63%;
+                }
+
+                .new_register {
+                    width: 35%;
+                }
+            }
+
+            .chart_container {
+                display: flex;
+                justify-content: space-between;
+
+                .chart1 {
+                    width: 400px;
+                    height: 400px;
+                    float: left;
+                    width: 35%;
+                    padding: 20px;
+                    background-color: white;
+                    border-radius: 7px;
+                }
+
+                .chart2 {
+                    width: 400px;
+                    height: 400px;
+                    float: left;
+                    width: 35%;
+                    padding: 20px;
+                    background-color: white;
+                    border-radius: 7px;
+                }
+
+                .chart3 {
+                    width: 400px;
+                    height: 400px;
+                    float: left;
+                    width: 20%;
+                    padding: 20px;
+                    background-color: white;
+                    border-radius: 7px;
+                }
+            }
         }
     }
-    
-
-    .chart_container {
-    display: flex;
-    justify-content: space-between;
-
-    .chart1{
-        width: 400px;
-        height: 400px;
-        float: left;
-        width: 30%;
-        padding: 20px;
-        background-color: white;
-        border-radius: 7px;
-    }
-    .chart2{
-        width: 400px;
-        height: 400px;
-        float: left;
-        width: 30%;
-        padding: 20px;
-        background-color: white;
-        border-radius: 7px;
-    }
-    .chart3{
-        width: 400px;
-        height: 400px;
-        float: left;
-        width: 30%;
-        padding: 20px;
-        background-color: white;
-        border-radius: 7px;
-    }
-    }
-
 }
-
-.left_navigation_container{
-    float: left;
-    background: white;
-    position: sticky;
-    top: 0;
-    z-index: 1;
-    width: 75px;
-}
-
-
-
-
-
-

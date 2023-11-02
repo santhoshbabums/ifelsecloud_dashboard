@@ -12,7 +12,7 @@ export class AppComponent{
 
   sales: EChartsOption =  {
     title: {
-      text: 'Sales Statitics', // Your chart title here
+      text: 'Sales Statistics', 
       left: 'left',
     },
     xAxis: {
@@ -20,7 +20,7 @@ export class AppComponent{
       data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
     },
     yAxis: {
-      type: 'value'
+      type: 'value',
     },
     series: [
       {
@@ -33,8 +33,7 @@ export class AppComponent{
 
   balanceOverview :EChartsOption = {
     title: {
-      text: 'Balance Overview', // Your chart title here
-      left: 'left',
+      text: 'Balance Overview',
     },
     tooltip: {
       trigger: 'axis',
@@ -74,14 +73,14 @@ export class AppComponent{
 
   topProducts : EChartsOption = {
     title: {
-      text: 'Top Products', // Your chart title here
+      text: 'Top Products', 
       left: 'left',
     },
     tooltip: {
       trigger: 'item'
     },
     legend: {
-      top: '5%',
+      bottom: '5%',
       left: 'center'
     },
     series: [

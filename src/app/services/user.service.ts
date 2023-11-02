@@ -7,17 +7,11 @@ import { HttpClient } from '@angular/common/http';
 })
 export class UserService {
 
-
-  
   url = environment.apiUrl
-
   constructor(
     private httpClient: HttpClient
   ) { }
-
-
-  getCurrentuserDetails(){
+  getCurrentuserDetails() {
     return this.httpClient.get(this.url)
   }
-
 }

@@ -15,7 +15,7 @@
                     <div class="progress-bar" [style.width.%]="new_registered_user.progress"
                     [style.backgroundColor]="(new_registered_user.progress >= 0 && new_registered_user.progress <= 20) ? 'red' : (new_registered_user.progress > 20 && new_registered_user.progress <= 40) ? 'brown' : (new_registered_user.progress > 40 && new_registered_user.progress <= 60) ? 'rgb(213 234 99)' : (new_registered_user.progress > 60 && new_registered_user.progress <= 80) ? 'orange' : 'green' ">
                     </div>
-                    <div>
+                    <div class="percentage_box">
                         <span class="percentage"  [style.color]="(new_registered_user.progress >= 0 && new_registered_user.progress <= 20) ? 'red' : (new_registered_user.progress > 20 && new_registered_user.progress <= 40) ? 'brown' : (new_registered_user.progress > 40 && new_registered_user.progress <= 60) ? 'rgb(213 234 99)' : (new_registered_user.progress > 60 && new_registered_user.progress <= 80) ? 'orange' : 'green' ">{{new_registered_user.progress}} %</span>
                     </div>
                 </div>
